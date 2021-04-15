@@ -128,15 +128,7 @@ int main() {
   eleAAfficher = listeTriee;
   for(int i = 0;i < 1; i++){
     cout << eleAAfficher->nomObjet <<" "<<eleAAfficher->date<<endl;
-    /*
-    if (eleAAfficher->suivant == NULL)
-    {
-      cout << eleAAfficher->suivant<<"/"<<endl;
-    }
-    else{
-      cout << eleAAfficher->suivant<<"/"<<(eleAAfficher->suivant)->nomObjet<<endl;  
-    }
-    */
+
     eleAAfficher = listeTriee->suivant;
   }
   cout << "---"<<endl;
@@ -145,15 +137,7 @@ int main() {
   eleAAfficher = listeTriee;
   for(int i = 0;i < 2; i++){
     cout << eleAAfficher->nomObjet <<" "<<eleAAfficher->date<<endl;
-    /*
-    if (eleAAfficher->suivant == NULL)
-    {
-      cout << eleAAfficher->suivant<<"/"<<endl;
-    }
-    else{
-      cout << eleAAfficher->suivant<<"/"<<(eleAAfficher->suivant)->nomObjet<<endl;  
-    }
-    */
+
     eleAAfficher = listeTriee->suivant;
   }
   cout << "---"<<endl;
@@ -162,17 +146,11 @@ int main() {
   eleAAfficher = listeTriee;
   for(int i = 0;i < 3; i++){
     cout << eleAAfficher->nomObjet <<" "<<eleAAfficher->date<<endl;
-    /*
-    if (eleAAfficher->suivant == NULL)
-    {
-      cout << eleAAfficher->suivant<<"/"<<endl;
-    }
-    else{
-      cout << eleAAfficher->suivant<<"/"<<(eleAAfficher->suivant)->nomObjet<<endl;  
-    }
-    */
+
     eleAAfficher = eleAAfficher->suivant;
   }
+  cout << "---"<<endl;
+  cout << "The third element added was well placed in the second place, function works."<<endl;
   cout << "----------"<< endl;
 
   cout << "----------"<< endl;
@@ -181,32 +159,36 @@ int main() {
 
   cout << "The first 10 elements of the unsorted list" <<endl;
   eleFocus = liste;
+  afficherListe(liste);
+  /*
   for (int i = 0; i < 10; i ++)
   {
-    //cout << "pt2"<<endl;
     //write in the file
-    
-    cout << eleFocus->nomObjet << " "
+    cout <<i+1<<". "<< eleFocus->nomObjet << " "
     << eleFocus->nbObjet << " "
     << eleFocus->date << " "
     << eleFocus->dureePro << " "
     << eleFocus->nbMati << " ";
     ensMatieres ensMat;
     ensMat = eleFocus->ensMat;
-    // cout << "pt3"<<endl;
     for (int k = 0; k < eleFocus->nbMati; k++){
       cout << ensMat[k].nom << " " << ensMat[k].poids << " ";
     }
     cout << eleFocus->volume<<endl;
+    if(i==9){
+      eleFocus->suivant = NULL;
+      //cut the tail for faster test
+      break;
+    }
     eleFocus = eleFocus->suivant;
   }
-  cout << "pt1" << endl;
+  */
+  cout << "---Liste unsorted printing finished.---" << endl;
 
   elementObjet* listeEmpty;
   listeEmpty = NULL;
   elementObjet* eleAdd;
   eleAdd = NULL;
-  
   //listeTriee was defined previously
   listeTriee = NULL;
   listeTriee = triInsertionRecursif(liste, listeEmpty, eleAdd);
@@ -214,24 +196,7 @@ int main() {
   cout << "---"<<endl;
   cout << "The first 10 elements of the sorted list" <<endl;
   eleFocus = listeTriee;
-  for (int i = 0; i < 10; i ++)
-  {
-    cout << "pt2"<<endl;
-    //write in the file
-    
-    cout << eleFocus->nomObjet << " "
-    << eleFocus->nbObjet << " "
-    << eleFocus->date << " "
-    << eleFocus->dureePro << " "
-    << eleFocus->nbMati << " ";
-    ensMatieres ensMat;
-    ensMat = eleFocus->ensMat;
-    //cout << "pt3"<<endl;
-    for (int k = 0; k < eleFocus->nbMati; k++){
-      cout << ensMat[k].nom << " " << ensMat[k].poids << " ";
-    }
-    cout << eleFocus->volume<<endl;
-    eleFocus = eleFocus->suivant;
-  }
+  afficherListe(listeTriee);
+   cout << "---Liste sorted printing finished.---" << endl;
   cout << "----------"<< endl;
 }

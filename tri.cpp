@@ -15,11 +15,11 @@ elementObjet* ajoutTri(elementObjet* eleAdd, elementObjet* liste){
   eleFocusAvant = NULL;
   bool breakMark = 0;
   if (liste == NULL){
-    cout << "q1" << endl;
+    //cout << "Enter ajoutTri(), liste is NULL" << endl;
     liste = eleAdd;
   }
   else{
-    cout << "q2" << endl;
+    //cout << "Enter ajoutTri(), liste not NULL" << endl;
     elementObjet* eleFocus;//current elementObjet
     eleFocus = liste;
     if(eleFocus->date >= eleAdd->date){
@@ -32,27 +32,29 @@ elementObjet* ajoutTri(elementObjet* eleAdd, elementObjet* liste){
     }
     while (eleFocus->date < eleAdd->date)
     {//until eleAdd reach the end of list or the right position in the middle
-      cout << "q3" << endl;
+      //cout << "eleFocus < eleAdd" << endl;
+      //cout << "eleFocus" << eleFocus->date <<endl;
+      //cout << "eleAdd" << eleAdd->date <<endl;
       if(eleFocus->suivant == NULL){//reach the end of list
-        cout << "q4" << endl;
+        //cout << "Next element of eleFocus is NULL" << endl;
         breakMark = 1;
         break; //end while
       }
       else{//go next to compare the date
-      cout << "q5" << endl;
+      //cout << "eleFocus >= eleAdd" << endl;
         eleFocusAvant = eleFocus;
         //save the eleFocus before it moves
         eleFocus = eleFocus->suivant;
       }
     }
     if(breakMark){//reach the end of list
-      cout << "q6" << endl;
+      //cout << "During while, reached the end of liste" << endl;
       eleFocus->suivant = eleAdd;
     }
     else{//find the right position in the middle
       // eleFocus->date >= eleAdd->date
       // insert the eleAdd one term before
-      cout << "q7" << endl;
+      //cout << "During while, NEVER reached the end of liste" << endl;
       eleFocusAvant->suivant = eleAdd;
       //cout<<"current eleFocusAvant" << eleFocusAvant->nomObjet <<endl;
       eleAdd->suivant = eleFocus;
@@ -65,25 +67,24 @@ elementObjet* ajoutTri(elementObjet* eleAdd, elementObjet* liste){
 //triInsertionRecursif()
 elementObjet* triInsertionRecursif(elementObjet* listNoTri, elementObjet* listTri, elementObjet* eleAdd){
 	if(listNoTri == NULL){
-    cout << "pt0" << endl;
+    //cout << "Enter triInsertionRecursif(), listeNoTri is NULL" << endl;
 		return listTri;
   }
   else{
       eleAdd = listNoTri;
-      cout << "ptg1" <<endl;
-      cout << listNoTri << endl;
-      cout << listNoTri->suivant << endl;
-      cout << "ptg2" << endl;
+      //cout << "Enter triInsertionRecursif(), listeNoTri not NULL" << endl;
+      //cout << "listeNoTri          " << listNoTri << endl;
+      //cout << "listNoTri->suivant  "<<listNoTri->suivant << endl;
       //eleAdd->suivant = NULL;//first
 
       listNoTri = listNoTri->suivant;//next
-      cout << "ptb" << endl;
       listTri = ajoutTri(eleAdd, listTri);
-      cout << "ptc" << endl;
+      //cout << "ajoutTri() finished, current listeTriee is:" << endl;
+      //afficherListe(listTri);
 
       listTri = triInsertionRecursif(listNoTri, listTri, eleAdd);//recursion
-      
-      cout << "ptd" << endl;
+      return listTri;
+      //cout << "ptd" << endl;
   }
 }
 

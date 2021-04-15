@@ -27,6 +27,10 @@ elementObjet* lireObjets(string nomFichier, int nomMax);
 //return: non(the generated file)
 void ecrireObjets(elementObjet* liste, string nomFichierGene);
 
+//Function: afficherListe
+//Display the first 10 elements in the liste to help debug
+void afficherListe(elementObjet* eleFocus);
+
 //Function: calculRetard
 //calculate the late days and the penality
 //Input: list sorted and current date

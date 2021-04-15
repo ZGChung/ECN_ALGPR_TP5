@@ -108,6 +108,29 @@ void ecrireObjets(elementObjet* liste, string nomFichierGene)
   fichier.close();
 }
 
+void afficherListe(elementObjet* eleFocus){
+  for (int i = 0; i < 10; i ++)
+  {
+    cout << "    "<<i+1<<". "<< eleFocus->nomObjet << " "
+    << eleFocus->nbObjet << " "
+    << eleFocus->date << " "
+    << eleFocus->dureePro << " "
+    << eleFocus->nbMati << " ";
+    ensMatieres ensMat;
+    ensMat = eleFocus->ensMat;
+    for (int k = 0; k < eleFocus->nbMati; k++){
+      cout << ensMat[k].nom << " " << ensMat[k].poids << " ";
+    }
+    cout << eleFocus->volume<<endl;
+    if(eleFocus->suivant != NULL){
+      eleFocus = eleFocus->suivant;
+    }
+    else{
+      break;//end the printing
+    }
+  }
+}
+
 //calculRetard_Naive
 /* 
 Calculation with a "fixed" list
@@ -143,18 +166,19 @@ in this algorithm, I used these conventions or hypothesis:
 <MODIFIED> 4. we can reshedule the production of one object later
 */
 /*
-Basic idea of searching a global optimisation of penalty
+Brief explanation of how I construct this algorithm for searching a global optimisation of penalty
+
 1. Suppose we are producing the products in the order of dates. We notice that obj1 will be late and we'll receive a penalty
 
-2. We browse all the objects scheduled before obj1, trying to find one or some object(s) whose dureePro add up to a number bigger to the days of relay of obj1. We might find many possible solutions, we store them in an array solution[]
+2. We browse all the objects scheduled before obj1, trying to find one or some object(s) whose dureePro add up to a number bigger than the days of relay of obj1. We might find many possible solutions, we store them in an array solution[]
 
 3. For each solution in solution[], we try to reschedule the objects in that solution to just behind the obj1. (Placing them earlier will not solve obj1's problem of penalty and placing them further later will increase unecessary penalty. ) For the case where there are multiple objects in one solution, we have to try with all the permutation of the objects in the solution. For example, if we have k objects in one solution, we'll have k! permutations to be tested. For each permutation, we calculate the total penalty with calculRetard1(). Then we choose the minimum as our result.
 
 4. Now we consider the case where we have plusieur objects late according to our initial production plan. So we calculate the total days of retard for all the objects late. Then we search for solutions just as before and store them in solution[].
 
-5. For each solution, each object in it could be reshedule just behind any of the objects retarded. That's to say, if we have n objects in one solution and we have m objects in retard, we'll have m^n possibilities for the distribution of the objects to be moved.
+5. For each solution, each object in it could be resheduled just behind any of the objects retarded. That's to say, if we have n objects in one solution and we have m objects in retard, we'll have m^n possibilities for the distribution of the objects to be moved, we store all these distributions in distribution[].
 
-6. What's even more complicated is, for each distribution, if there are multiple objects resheduled behind one object, we have to try with all the permutations just as before. So we have to calculate and store the total penalty for each permutation in each distribution in each solution. Then we return the minimum as our result, which is exactly the global optimisation of penalty.
+6. What's even more complicated is, for each distribution, if there are multiple objects resheduled behind one object retarded, we have to try with all the permutations just as before. So we have to calculate and store the total penalty for each permutation in each distribution in each solution. Then we return the minimum as our result, which is exactly the global optimisation of penalty.
 */
 
 /*
