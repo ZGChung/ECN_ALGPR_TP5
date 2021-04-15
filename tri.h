@@ -18,9 +18,8 @@ elementObjet* ajoutTri(elementObjet* eleAdd, elementObjet* liste);
 
 //Function: triInsertionRecursif
 //tri with the insertion of the first elementObjet in the listNoTri into a listTri
-//Input: pointers listNoTri et listTri
-//return: pointer listTri 
-//elementObjet* triInsertionRecursif(elementObjet* listNoTri, elementObjet* listTri);
+//Input: pointers listNoTri, listTri et eleAdd
+//return: pointer listTri
 elementObjet* triInsertionRecursif(elementObjet* listNoTri, elementObjet* listTri, elementObjet* eleAdd);
 
 //suppressionDebut
@@ -35,13 +34,13 @@ elementObjet* suppressionDebut(elementObjet* liste);
 //return: the list added
 elementObjet* ajoutDebut(elementObjet* eleAdd, elementObjet* liste);
 
-/*
+
 //concaListe
 //connect two list of elementObjet
 //Input: two list
 //Return: the final list connected
-elementObjet* concaListe(elementObjet* l1, elementObjet* l2)
-*/
+elementObjet* concaListe(elementObjet* l1, elementObjet* l2);
+
 
 //triRapide
 //sort by a pivot, connect the less and pivot and greater

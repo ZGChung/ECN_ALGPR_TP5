@@ -49,6 +49,7 @@ int main() {
   
   cout << "----------"<< endl;
   cout << "3.Calculate the execution time of lireObjets() and ecrireObjets() for the 5 datasets in data1" << endl;
+  cout << "---"<<endl;
   //iteration over the 5 files in data1
   typedef vector<int> numListe;
   numListe numListe1;
@@ -87,6 +88,7 @@ int main() {
     << nomFichier << " is" <<endl;
     cout <<(double)(end-start)/CLOCKS_PER_SEC
     <<" ms" <<endl;
+    cout <<"---"<<endl;
   }
 
   /*
@@ -159,30 +161,8 @@ int main() {
 
   cout << "The first 10 elements of the unsorted list" <<endl;
   eleFocus = liste;
-  afficherListe(liste);
-  /*
-  for (int i = 0; i < 10; i ++)
-  {
-    //write in the file
-    cout <<i+1<<". "<< eleFocus->nomObjet << " "
-    << eleFocus->nbObjet << " "
-    << eleFocus->date << " "
-    << eleFocus->dureePro << " "
-    << eleFocus->nbMati << " ";
-    ensMatieres ensMat;
-    ensMat = eleFocus->ensMat;
-    for (int k = 0; k < eleFocus->nbMati; k++){
-      cout << ensMat[k].nom << " " << ensMat[k].poids << " ";
-    }
-    cout << eleFocus->volume<<endl;
-    if(i==9){
-      eleFocus->suivant = NULL;
-      //cut the tail for faster test
-      break;
-    }
-    eleFocus = eleFocus->suivant;
-  }
-  */
+  afficherListe(liste,10);
+
   cout << "---Liste unsorted printing finished.---" << endl;
 
   elementObjet* listeEmpty;
@@ -196,7 +176,144 @@ int main() {
   cout << "---"<<endl;
   cout << "The first 10 elements of the sorted list" <<endl;
   eleFocus = listeTriee;
-  afficherListe(listeTriee);
-   cout << "---Liste sorted printing finished.---" << endl;
+  afficherListe(listeTriee,10);
+  cout << "---Liste sorted printing finished.---" << endl;
+  cout << "To see the complete output, please check testResult_triInsertionRecursif.txt"<<endl;
+  nomFichierGene = "testResult_triInsertionRecursif.txt";
+  ecrireObjets(listeTriee,nomFichierGene);
   cout << "----------"<< endl;
+
+
+  cout << "----------"<< endl;
+  cout << "6.Test results of suppressionDebut()"<<endl;
+  liste = lireObjets("data1/objetsInput_100.txt", 100);
+  cout << "    a)The first 5 elements of liste now is: "<<endl; 
+  afficherListe(liste,5);
+  cout << "---"<<endl;
+  liste = suppressionDebut(liste);
+  cout << "    b)The first 5 elements of liste now is: "<<endl; 
+  afficherListe(liste,5);
+  cout << "---"<<endl;
+  liste = suppressionDebut(liste);
+  cout << "    c)The first 5 elements of liste now is: "<<endl; 
+  afficherListe(liste,5);
+  cout << "---"<<endl;
+  liste = suppressionDebut(liste);
+  cout << "    d)The first 5 elements of liste now is: "<<endl; 
+  afficherListe(liste,5);
+  cout << "---"<<endl;
+  cout << "By comparing these listes, we confirm that the function works." << endl;
+  cout << "----------"<< endl;
+
+
+  cout << "----------"<< endl;
+  cout << "7.Test results of ajoutDebut()"<<endl;
+  liste = lireObjets("data1/objetsInput_100.txt", 100);
+  cout << "Copy the 21-24th elements and add them to the beginning one by one."<<endl;
+  eleFocus = liste;
+  for(int i =0;i<20;i++){
+    eleFocus = eleFocus->suivant;
+  }
+  cout << "The first 5 elements of the initial liste is :"<<endl;
+  afficherListe(liste,5);
+  cout << "The 4 elements to be added are: "<< endl;
+  afficherListe(eleFocus,4);
+
+  
+  for (int i = 0 ; i <4 ; i++){
+    eleAdd = new(elementObjet);
+    *eleAdd = *eleFocus;
+    cout <<"---ajoutDebut()---"<<endl;
+    liste = ajoutDebut(eleAdd, liste);
+    cout << "The first 5 elements of the current liste is :"<<endl;
+    afficherListe(liste,5);
+    eleFocus = eleFocus->suivant;
+  }
+  
+  cout << "The function works."<< endl;
+  cout << "----------"<< endl;
+
+
+  cout << "----------"<< endl;
+  cout << "8.Test results of concaListe()"<<endl;
+  liste = lireObjets("data1/objetsInput_100.txt", 100);
+  elementObjet* l1;
+  elementObjet* l2;
+  elementObjet* eleFocus2;
+
+  l1 = liste;
+  l2 = liste->suivant->suivant->suivant;
+  l1->suivant->suivant->suivant=NULL;
+  l2->suivant->suivant->suivant=NULL;
+  cout << "Here are the 2 listes to be concatinated."<< endl;
+  cout << "---l1---"<<endl;
+  afficherListe(l1,4);
+  cout << "---l2---"<<endl;
+  afficherListe(l2,4);
+  cout << "Here is the result of concatination."<< endl;
+  l1 = concaListe(l1,l2);
+  afficherListe(l1,7);
+  cout <<"The function works."<<endl;
+
+  cout << "----------"<< endl;
+
+  cout << "----------"<< endl;
+  cout << "9.Test results of triRapide()"<<endl;
+  cout << "---"<<endl;
+  cout<<"Remarque : Je n'ai pas utilisé la méthode de swap que j'ai parlé pendant le cours de TP car j'ai réalisé c'est compliqué quand on travaille avec une liste chaînée simple. "<<endl;
+  cout << "---"<<endl;
+  liste = lireObjets("data1/objetsInput_100.txt", 100);
+
+  cout << "The first 10 elements of the unsorted list" <<endl;
+  eleFocus = liste;
+  afficherListe(liste,11);
+
+  cout << "---Liste unsorted printing finished.---" << endl;
+
+  //listeEmpty was defined previously
+  listeEmpty = NULL;
+  //eleAdd was defined previously
+  eleAdd = NULL;
+  //listeTriee was defined previously
+  listeTriee = NULL;
+  listeTriee = triRapide(liste);
+
+  cout << "---"<<endl;
+  cout << "The first 10 elements of the sorted list" <<endl;
+  eleFocus = listeTriee;
+  afficherListe(listeTriee,10);
+
+  cout << "---Liste sorted printing finished.---" << endl;
+  
+  cout << "To see the complete output, please check testResult_triRapide.txt"<<endl<<endl;
+  nomFichierGene = "testResult_triRapide.txt";
+  ecrireObjets(listeTriee,nomFichierGene);
+  cout<<"By comparing with the result obtained with the function triInsertionRecursif(), we found that the results are similar, except for the elements with the same dates of delivery. "<<endl<<endl;
+  cout<<"The function works."<<endl;
+  cout << "----------"<< endl;
+
+  cout << "----------"<< endl;
+  cout << "10.Test results of calculRetard1()"<<endl;
+  liste = lireObjets("data1/objetsInput_100.txt", 100);
+  Result res;
+  res = calculRetard1(liste);
+
+  cout<<"The hypothesis we took for this algorithm are:"<<endl;
+  cout<<"    1. the list input is sorted according to the dates (early to late)"<<endl;
+  cout<<"    2. all the other resources for production are abundant"<<endl;
+  cout<<"    3. we can't pause in the middle of the production of one object"<<endl;
+  cout<<"    4. we produce strictly in the order of the dates"<<endl;
+  cout << "---"<<endl;
+  cout << "The results are:"<< endl;
+  cout<<"1.     Days of delay (WITHOUT multiplicity of objects)"<<endl;
+  cout<<"    "<<res.jour<<" [jour(s)]" <<endl;
+  cout<<"1.bis. Days of delay (WITH multiplicity of objects)"<<endl;
+  cout<<"    "<<res.jour_mul<< " [jour(s)]" <<endl;
+  cout<<"2.     Total penalty"<<endl;
+  cout<<"    "<<res.penal<<" [unit d'argent]" <<endl;
+  cout<<endl<<"We got the results, however, we cannot assure that it is correct."<<endl;
+
+  cout << "----------"<< endl;
+
+
 }

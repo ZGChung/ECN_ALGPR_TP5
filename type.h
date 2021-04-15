@@ -40,6 +40,7 @@ struct elementObjet
 // define the Result struct to return 2 values for question 5
 struct Result{
     int jour;
+    int jour_mul;
     int penal;
 };
 

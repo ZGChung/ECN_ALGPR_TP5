@@ -75,9 +75,9 @@ elementObjet* triInsertionRecursif(elementObjet* listNoTri, elementObjet* listTr
       //cout << "Enter triInsertionRecursif(), listeNoTri not NULL" << endl;
       //cout << "listeNoTri          " << listNoTri << endl;
       //cout << "listNoTri->suivant  "<<listNoTri->suivant << endl;
-      //eleAdd->suivant = NULL;//first
+      //eleAdd->suivant = NULL;//get only the first
 
-      listNoTri = listNoTri->suivant;//next
+      listNoTri = listNoTri->suivant;//go next
       listTri = ajoutTri(eleAdd, listTri);
       //cout << "ajoutTri() finished, current listeTriee is:" << endl;
       //afficherListe(listTri);
@@ -102,13 +102,17 @@ elementObjet* suppressionDebut(elementObjet* liste){
 
 //ajoutDebut
 elementObjet* ajoutDebut(elementObjet* eleAdd, elementObjet* liste){
-  eleAdd->suivant = liste;
-  liste = eleAdd;
+  elementObjet* temp;
+  temp = new(elementObjet);
+  *temp= *eleAdd;
+  temp->suivant = liste;
+  liste = temp;
   return liste;
 }
 
 // 我感觉不必使用concaList函数。这个函数每次都遍历一遍l1，我觉得浪费很多时间-ZGC
-/*
+// 打脸，还是要用concaList函数。递归之后对子列重新排序，不能轻易知道InfListe的结尾了 -ZGC
+
 //concaListe
 elementObjet* concaListe(elementObjet* l1, elementObjet* l2){
   if(l1 == NULL){
@@ -135,7 +139,7 @@ elementObjet* concaListe(elementObjet* l1, elementObjet* l2){
     }
   }
 }
-*/
+
 
 //triRapide
 elementObjet* triRapide(elementObjet* liste)
@@ -144,43 +148,52 @@ elementObjet* triRapide(elementObjet* liste)
     elementObjet* supListe;
     elementObjet* pivot;
     elementObjet* eleFocus;
-    elementObjet* tailInfListe;
     infListe = NULL;
     supListe = NULL;
-    pivot = NULL;
+    pivot = new(elementObjet);
     eleFocus = NULL;
-    tailInfListe = NULL;
 
-    if ((liste == NULL)||(liste->suivant == NULL)) 
+    if ((liste == NULL)||(liste->suivant == NULL)){
+        // cout << "Enter triRapide, liste==NULL OR liste->suivant==NULL" <<endl;
         return liste;
         //if there is 1 or 0 element, it is sorted
+    }
     else 
     {
+      // cout << "Enter triRapide, liste!=NULL AND liste->suivant!=NULL" <<endl;
       //select the 1st element as the pivot
-      pivot = liste;
+      *pivot = *liste;
+      pivot->suivant = NULL;
+      // cout << "pivot:  "<<endl;
+      // afficherListe(pivot, 1);
       //pick out the 1st element
       liste = suppressionDebut(liste);
+      // cout << "liste après suppresionDebut:  "<<endl;
+      // afficherListe(liste, 10);
       eleFocus = liste;
       while(eleFocus != NULL){
         if(eleFocus->date < pivot->date){
           //put the element in the infListe if it is less than pivot
-          if(infListe == NULL){
-            //this is the first element being added to the infListe
-            tailInfListe = eleFocus->suivant;
-          }
           infListe = ajoutDebut(eleFocus, infListe);
         }
         else if(eleFocus->date >= pivot->date){
           //similar with larger elements
           supListe = ajoutDebut(eleFocus, supListe);
         }
+        // cout<<"current infListe:"<<endl;
+        // afficherListe(infListe, 5);
+        // cout<<"current supListe:"<<endl;
+        // afficherListe(supListe, 5);
+        eleFocus = eleFocus->suivant;
+        // cout << "move the eleFocus"<<endl;
       }
-      //concat infListe and pivot
-      tailInfListe = pivot;
-      //concat (infListe,pivot) and supListe
-      pivot->suivant = supListe;
+      //concat triRapid(infListe) and pivot
+      //concat (triRapid(infListe),pivot) and triRapid(supListe)
       //return the concatinated list
-      //return concaListe(concaListe(infListe, pivot),supListe);
-      return infListe;
+      liste = concaListe(concaListe(triRapide(infListe), pivot),triRapide(supListe));
+      // cout<<"The liste concatinated is :"<<endl;
+      // afficherListe(liste, 10);
+      return liste;
+      
     }
  }

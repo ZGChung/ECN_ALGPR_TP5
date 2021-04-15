@@ -108,25 +108,29 @@ void ecrireObjets(elementObjet* liste, string nomFichierGene)
   fichier.close();
 }
 
-void afficherListe(elementObjet* eleFocus){
-  for (int i = 0; i < 10; i ++)
-  {
-    cout << "    "<<i+1<<". "<< eleFocus->nomObjet << " "
-    << eleFocus->nbObjet << " "
-    << eleFocus->date << " "
-    << eleFocus->dureePro << " "
-    << eleFocus->nbMati << " ";
-    ensMatieres ensMat;
-    ensMat = eleFocus->ensMat;
-    for (int k = 0; k < eleFocus->nbMati; k++){
-      cout << ensMat[k].nom << " " << ensMat[k].poids << " ";
-    }
-    cout << eleFocus->volume<<endl;
-    if(eleFocus->suivant != NULL){
-      eleFocus = eleFocus->suivant;
-    }
-    else{
-      break;//end the printing
+void afficherListe(elementObjet* eleFocus, int max){
+  if(eleFocus == NULL){
+    cout <<"EMPTY LISTE"<<endl;
+  }
+  else{
+    for (int i = 0; i < max; i ++){
+      cout << "    "<<i+1<<". "<< eleFocus->nomObjet << " "
+      << eleFocus->nbObjet << " "
+      << eleFocus->date << " "
+      << eleFocus->dureePro << " "
+      << eleFocus->nbMati << " ";
+      ensMatieres ensMat;
+      ensMat = eleFocus->ensMat;
+      for (int k = 0; k < eleFocus->nbMati; k++){
+        cout << ensMat[k].nom << " " << ensMat[k].poids << " ";
+      }
+      cout << eleFocus->volume<<endl;
+      if(eleFocus->suivant != NULL){
+        eleFocus = eleFocus->suivant;
+      }
+      else{
+        break;//end the printing
+      }
     }
   }
 }
@@ -143,17 +147,26 @@ in this algorithm, I used these conventions or hypothesis:
 Result calculRetard1(elementObjet* liste){
   int jourAct = 0;
   int jours_de_retard = 0;
+  int jours_de_retard_mul = 0;
   elementObjet* eleFocus;
   eleFocus = liste;
+  Result res;
 
   while (eleFocus != NULL){
     jourAct += eleFocus->dureePro;
     if(eleFocus->dureePro < jourAct){
-      jours_de_retard += ((jourAct - eleFocus->dureePro) * (eleFocus->nbObjet));
+      //since I am not sure about the meaning of "nombre des jours de retard", I calculated both 2 possibilities:
+      //this is the number of days considering multiplicity of objects
+      jours_de_retard_mul += ((jourAct - eleFocus->dureePro) * (eleFocus->nbObjet));
+      //this is the number of days WITHOUT considering multiplicity of objects
+      jours_de_retard += (jourAct - eleFocus->dureePro);
     }
     eleFocus = eleFocus->suivant;
   }
-  return Result {jours_de_retard, jours_de_retard*1};
+  res.jour = jours_de_retard;
+  res.jour_mul = jours_de_retard_mul;
+  res.penal = 1* jours_de_retard_mul;
+  return res;
 }
 
 //calculRetard_Global

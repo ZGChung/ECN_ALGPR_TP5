@@ -29,7 +29,7 @@ void ecrireObjets(elementObjet* liste, string nomFichierGene);
 
 //Function: afficherListe
 //Display the first 10 elements in the liste to help debug
-void afficherListe(elementObjet* eleFocus);
+void afficherListe(elementObjet* eleFocus, int max);
 
 //Function: calculRetard
 //calculate the late days and the penality
