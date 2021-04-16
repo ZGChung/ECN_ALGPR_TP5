@@ -1,3 +1,11 @@
+/*************************************************************
+
+ Auteur: ZHONG Zijie, HAN Tengfei
+ Date: 15/04/2021
+ But: TP5 contient des diverses fonctions pour tri
+
+*************************************************************/
+
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -111,7 +119,7 @@ elementObjet* ajoutDebut(elementObjet* eleAdd, elementObjet* liste){
 }
 
 // 我感觉不必使用concaList函数。这个函数每次都遍历一遍l1，我觉得浪费很多时间-ZGC
-// 打脸，还是要用concaList函数。递归之后对子列重新排序，不能轻易知道InfListe的结尾了 -ZGC
+// 打脸，还是要用concaList函数。递归之后对子列重新排序，不能轻易知道InfListe的结尾了 -ZGC 非常合理-fjc
 
 //concaListe
 elementObjet* concaListe(elementObjet* l1, elementObjet* l2){

@@ -1,3 +1,11 @@
+/*************************************************************
+
+ Auteur: ZHONG Zijie, HAN Tengfei
+ Date: 15/04/2021
+ But: TP5 contient des diverses structures pour stocker les informations(objet, matiere, resultat de retard)
+
+*************************************************************/
+
 #ifndef TYPE_INCLUDED
 #define TYPE_INCLUDED
 

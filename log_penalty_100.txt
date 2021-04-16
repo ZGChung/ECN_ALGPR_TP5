@@ -1,0 +1,646 @@
+This is the log file of the process of calculationg of penalty, related to the data in data1/objetsInput_100.txt
+---
+Current day number:
+    1
+NO DELAY TODAY
+---
+Current day number:
+    4
+NO DELAY TODAY
+---
+Current day number:
+    6
+NO DELAY TODAY
+---
+Current day number:
+    7
+NO DELAY TODAY
+---
+Current day number:
+    8
+NO DELAY TODAY
+---
+Current day number:
+    9
+NO DELAY TODAY
+---
+Current day number:
+    11
+NO DELAY TODAY
+---
+Current day number:
+    12
+NO DELAY TODAY
+---
+Current day number:
+    14
+NO DELAY TODAY
+---
+Current day number:
+    16
+NO DELAY TODAY
+---
+Current day number:
+    18
+NO DELAY TODAY
+---
+Current day number:
+    19
+NO DELAY TODAY
+---
+Current day number:
+    21
+NO DELAY TODAY
+---
+Current day number:
+    23
+NO DELAY TODAY
+---
+Current day number:
+    25
+NO DELAY TODAY
+---
+Current day number:
+    26
+NO DELAY TODAY
+---
+Current day number:
+    28
+NO DELAY TODAY
+---
+Current day number:
+    31
+NO DELAY TODAY
+---
+Current day number:
+    33
+NO DELAY TODAY
+---
+Current day number:
+    36
+NO DELAY TODAY
+---
+Current day number:
+    38
+NO DELAY TODAY
+---
+Current day number:
+    41
+NO DELAY TODAY
+---
+Current day number:
+    44
+Object in retard: 
+    - fauteuil 460 45 3 1 caoutchouc 0.5 1.5
+Days of delay of this single object(multiplcity):
+    920
+Days of delay of this single object(without multiplicity):
+    2
+---
+Current day number:
+    47
+Object in retard: 
+    - etagere 370 46 3 3 verre 3 chene 2 carbone 4 2
+Days of delay of this single object(multiplcity):
+    1480
+Days of delay of this single object(without multiplicity):
+    4
+---
+Current day number:
+    50
+Object in retard: 
+    - etagere 140 46 3 1 verre 2 2
+Days of delay of this single object(multiplcity):
+    980
+Days of delay of this single object(without multiplicity):
+    7
+---
+Current day number:
+    53
+Object in retard: 
+    - canape 480 48 3 1 chene 2 3
+Days of delay of this single object(multiplcity):
+    3840
+Days of delay of this single object(without multiplicity):
+    8
+---
+Current day number:
+    56
+Object in retard: 
+    - desserte 360 50 3 1 caoutchouc 2.5 2.5
+Days of delay of this single object(multiplcity):
+    3240
+Days of delay of this single object(without multiplicity):
+    9
+---
+Current day number:
+    59
+Object in retard: 
+    - canape 130 52 3 2 carbone 0.5 plastique 4 1
+Days of delay of this single object(multiplcity):
+    1300
+Days of delay of this single object(without multiplicity):
+    10
+---
+Current day number:
+    60
+Object in retard: 
+    - etagere 230 53 1 2 resine 4.5 carbone 0.5 0.5
+Days of delay of this single object(multiplcity):
+    1840
+Days of delay of this single object(without multiplicity):
+    8
+---
+Current day number:
+    61
+Object in retard: 
+    - canape 140 55 1 2 carbone 3 verre 2 3
+Days of delay of this single object(multiplcity):
+    980
+Days of delay of this single object(without multiplicity):
+    7
+---
+Current day number:
+    63
+Object in retard: 
+    - table-basse 330 56 2 1 verre 2.5 3.5
+Days of delay of this single object(multiplcity):
+    2970
+Days of delay of this single object(without multiplicity):
+    9
+---
+Current day number:
+    66
+Object in retard: 
+    - fauteuil 270 57 3 1 carbone 2.5 0.5
+Days of delay of this single object(multiplcity):
+    3240
+Days of delay of this single object(without multiplicity):
+    12
+---
+Current day number:
+    68
+Object in retard: 
+    - fauteuil 240 61 2 2 chene 3 chene 3.5 3.5
+Days of delay of this single object(multiplcity):
+    2160
+Days of delay of this single object(without multiplicity):
+    9
+---
+Current day number:
+    70
+Object in retard: 
+    - etagere 110 62 2 2 carton 1 carbone 2.5 3
+Days of delay of this single object(multiplcity):
+    1100
+Days of delay of this single object(without multiplicity):
+    10
+---
+Current day number:
+    72
+Object in retard: 
+    - fauteuil 160 62 2 2 acier 4.5 carbone 2 4
+Days of delay of this single object(multiplcity):
+    1920
+Days of delay of this single object(without multiplicity):
+    12
+---
+Current day number:
+    73
+Object in retard: 
+    - fauteuil 250 66 1 2 plastique 2.5 verre 2.5 1
+Days of delay of this single object(multiplcity):
+    2000
+Days of delay of this single object(without multiplicity):
+    8
+---
+Current day number:
+    76
+Object in retard: 
+    - fauteuil 400 68 3 1 carbone 0.5 1
+Days of delay of this single object(multiplcity):
+    4400
+Days of delay of this single object(without multiplicity):
+    11
+---
+Current day number:
+    79
+Object in retard: 
+    - console 320 70 3 2 resine 3.5 resine 0.5 4.5
+Days of delay of this single object(multiplcity):
+    3840
+Days of delay of this single object(without multiplicity):
+    12
+---
+Current day number:
+    81
+Object in retard: 
+    - commode 260 70 2 1 carbone 2 3
+Days of delay of this single object(multiplcity):
+    3380
+Days of delay of this single object(without multiplicity):
+    13
+---
+Current day number:
+    84
+Object in retard: 
+    - desserte 270 74 3 2 resine 4.5 caoutchouc 3.5 2
+Days of delay of this single object(multiplcity):
+    3510
+Days of delay of this single object(without multiplicity):
+    13
+---
+Current day number:
+    85
+Object in retard: 
+    - commode 290 76 1 1 carton 2 2.5
+Days of delay of this single object(multiplcity):
+    2900
+Days of delay of this single object(without multiplicity):
+    10
+---
+Current day number:
+    87
+Object in retard: 
+    - console 400 84 2 1 resine 1 1.5
+Days of delay of this single object(multiplcity):
+    2000
+Days of delay of this single object(without multiplicity):
+    5
+---
+Current day number:
+    90
+Object in retard: 
+    - chaise 250 87 3 1 carbone 3 1
+Days of delay of this single object(multiplcity):
+    1500
+Days of delay of this single object(without multiplicity):
+    6
+---
+Current day number:
+    92
+Object in retard: 
+    - commode 130 89 2 3 acier 0.5 verre 1 plastique 2.5 2
+Days of delay of this single object(multiplcity):
+    650
+Days of delay of this single object(without multiplicity):
+    5
+---
+Current day number:
+    95
+Object in retard: 
+    - chaise 90 92 3 1 plastique 1 3.5
+Days of delay of this single object(multiplcity):
+    540
+Days of delay of this single object(without multiplicity):
+    6
+---
+Current day number:
+    97
+Object in retard: 
+    - fauteuil 460 94 2 2 carton 4.5 carbone 4 1.5
+Days of delay of this single object(multiplcity):
+    2300
+Days of delay of this single object(without multiplicity):
+    5
+---
+Current day number:
+    99
+Object in retard: 
+    - console 370 97 2 1 verre 1.5 1
+Days of delay of this single object(multiplcity):
+    1480
+Days of delay of this single object(without multiplicity):
+    4
+---
+Current day number:
+    102
+Object in retard: 
+    - canape 470 98 3 2 plastique 4 acier 1 4
+Days of delay of this single object(multiplcity):
+    3290
+Days of delay of this single object(without multiplicity):
+    7
+---
+Current day number:
+    105
+Object in retard: 
+    - desserte 160 99 3 2 carton 3 chene 4 3
+Days of delay of this single object(multiplcity):
+    1440
+Days of delay of this single object(without multiplicity):
+    9
+---
+Current day number:
+    106
+Object in retard: 
+    - desserte 230 103 1 1 resine 1.5 4
+Days of delay of this single object(multiplcity):
+    920
+Days of delay of this single object(without multiplicity):
+    4
+---
+Current day number:
+    109
+Object in retard: 
+    - fauteuil 180 109 3 2 carbone 1.5 acier 1 2.5
+Days of delay of this single object(multiplcity):
+    540
+Days of delay of this single object(without multiplicity):
+    3
+---
+Current day number:
+    110
+Object in retard: 
+    - console 500 110 1 2 acier 0.5 acier 2 4.5
+Days of delay of this single object(multiplcity):
+    500
+Days of delay of this single object(without multiplicity):
+    1
+---
+Current day number:
+    111
+Object in retard: 
+    - lampe 130 110 1 1 chene 4.5 2.5
+Days of delay of this single object(multiplcity):
+    260
+Days of delay of this single object(without multiplicity):
+    2
+---
+Current day number:
+    112
+NO DELAY TODAY
+---
+Current day number:
+    113
+NO DELAY TODAY
+---
+Current day number:
+    116
+Object in retard: 
+    - commode 330 117 3 2 acier 1.5 plastique 3.5 1.5
+Days of delay of this single object(multiplcity):
+    660
+Days of delay of this single object(without multiplicity):
+    2
+---
+Current day number:
+    118
+Object in retard: 
+    - table-basse 170 118 2 2 caoutchouc 2 carbone 0.5 2
+Days of delay of this single object(multiplcity):
+    340
+Days of delay of this single object(without multiplicity):
+    2
+---
+Current day number:
+    119
+Object in retard: 
+    - canape 320 119 1 1 carton 2.5 1.5
+Days of delay of this single object(multiplcity):
+    320
+Days of delay of this single object(without multiplicity):
+    1
+---
+Current day number:
+    121
+Object in retard: 
+    - desserte 100 122 2 2 chene 2 caoutchouc 2.5 4.5
+Days of delay of this single object(multiplcity):
+    100
+Days of delay of this single object(without multiplicity):
+    1
+---
+Current day number:
+    124
+Object in retard: 
+    - canape 230 124 3 1 chene 3.5 0.5
+Days of delay of this single object(multiplcity):
+    690
+Days of delay of this single object(without multiplicity):
+    3
+---
+Current day number:
+    126
+NO DELAY TODAY
+---
+Current day number:
+    128
+NO DELAY TODAY
+---
+Current day number:
+    131
+NO DELAY TODAY
+---
+Current day number:
+    133
+NO DELAY TODAY
+---
+Current day number:
+    135
+Object in retard: 
+    - etagere 430 135 2 1 resine 3 3
+Days of delay of this single object(multiplcity):
+    860
+Days of delay of this single object(without multiplicity):
+    2
+---
+Current day number:
+    137
+Object in retard: 
+    - fauteuil 20 136 2 1 caoutchouc 2.5 2.5
+Days of delay of this single object(multiplcity):
+    60
+Days of delay of this single object(without multiplicity):
+    3
+---
+Current day number:
+    138
+Object in retard: 
+    - table-basse 210 136 1 1 chene 1.5 3.5
+Days of delay of this single object(multiplcity):
+    630
+Days of delay of this single object(without multiplicity):
+    3
+---
+Current day number:
+    140
+Object in retard: 
+    - commode 180 140 2 1 chene 2 3
+Days of delay of this single object(multiplcity):
+    360
+Days of delay of this single object(without multiplicity):
+    2
+---
+Current day number:
+    143
+Object in retard: 
+    - table-basse 240 142 3 1 resine 1.5 1.5
+Days of delay of this single object(multiplcity):
+    960
+Days of delay of this single object(without multiplicity):
+    4
+---
+Current day number:
+    145
+Object in retard: 
+    - chaise 90 143 2 2 plastique 1 resine 4.5 3.5
+Days of delay of this single object(multiplcity):
+    360
+Days of delay of this single object(without multiplicity):
+    4
+---
+Current day number:
+    148
+Object in retard: 
+    - fauteuil 410 143 3 1 verre 3.5 2.5
+Days of delay of this single object(multiplcity):
+    3280
+Days of delay of this single object(without multiplicity):
+    8
+---
+Current day number:
+    149
+Object in retard: 
+    - lampe 400 144 1 1 resine 2.5 2.5
+Days of delay of this single object(multiplcity):
+    2400
+Days of delay of this single object(without multiplicity):
+    6
+---
+Current day number:
+    152
+Object in retard: 
+    - canape 60 145 3 3 verre 2 carton 1.5 chene 4 3
+Days of delay of this single object(multiplcity):
+    600
+Days of delay of this single object(without multiplicity):
+    10
+---
+Current day number:
+    153
+NO DELAY TODAY
+---
+Current day number:
+    155
+NO DELAY TODAY
+---
+Current day number:
+    157
+NO DELAY TODAY
+---
+Current day number:
+    159
+NO DELAY TODAY
+---
+Current day number:
+    160
+NO DELAY TODAY
+---
+Current day number:
+    161
+NO DELAY TODAY
+---
+Current day number:
+    163
+NO DELAY TODAY
+---
+Current day number:
+    164
+NO DELAY TODAY
+---
+Current day number:
+    165
+NO DELAY TODAY
+---
+Current day number:
+    166
+NO DELAY TODAY
+---
+Current day number:
+    168
+Object in retard: 
+    - table-basse 320 169 2 1 chene 1.5 2.5
+Days of delay of this single object(multiplcity):
+    320
+Days of delay of this single object(without multiplicity):
+    1
+---
+Current day number:
+    171
+NO DELAY TODAY
+---
+Current day number:
+    173
+NO DELAY TODAY
+---
+Current day number:
+    174
+NO DELAY TODAY
+---
+Current day number:
+    176
+NO DELAY TODAY
+---
+Current day number:
+    179
+NO DELAY TODAY
+---
+Current day number:
+    182
+NO DELAY TODAY
+---
+Current day number:
+    184
+NO DELAY TODAY
+---
+Current day number:
+    185
+NO DELAY TODAY
+---
+Current day number:
+    188
+Object in retard: 
+    - chaise 270 189 3 1 verre 2 3.5
+Days of delay of this single object(multiplcity):
+    540
+Days of delay of this single object(without multiplicity):
+    2
+---
+Current day number:
+    189
+NO DELAY TODAY
+---
+Current day number:
+    190
+NO DELAY TODAY
+---
+Current day number:
+    192
+Object in retard: 
+    - console 280 193 2 1 chene 2.5 3
+Days of delay of this single object(multiplcity):
+    280
+Days of delay of this single object(without multiplicity):
+    1
+---
+Current day number:
+    194
+Object in retard: 
+    - desserte 250 194 2 1 chene 1 1
+Days of delay of this single object(multiplcity):
+    500
+Days of delay of this single object(without multiplicity):
+    2
+---
+Current day number:
+    195
+NO DELAY TODAY
+---
+Current day number:
+    197
+NO DELAY TODAY
+---
+Current day number:
+    200
+NO DELAY TODAY

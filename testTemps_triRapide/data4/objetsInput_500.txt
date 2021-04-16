@@ -1,0 +1,500 @@
+console 160 10 1 2 plastique 0.5 caoutchouc 3.5 3
+table-basse 360 10 2 3 resine 3.5 caoutchouc 4 caoutchouc 3.5 1.5
+fauteuil 460 11 1 1 acier 2.5 1.5
+console 250 14 3 1 caoutchouc 3 3
+commode 430 15 2 1 carbone 0.5 3
+chaise 390 16 2 2 verre 4 resine 3 3.5
+lampe 80 20 1 2 chene 4.5 carbone 1 1
+console 460 22 3 2 plastique 3 acier 3 0.5
+console 130 24 3 3 verre 3 plastique 3 caoutchouc 0.5 4
+commode 260 32 3 1 plastique 4 3
+fauteuil 380 33 3 1 carton 3 4.5
+console 10 34 1 2 plastique 3.5 resine 1 0.5
+lampe 230 38 3 3 acier 2.5 carbone 4 plastique 1.5 0.5
+canape 250 38 3 1 plastique 1 0.5
+desserte 290 39 3 1 carton 2.5 3
+etagere 460 41 3 1 resine 4.5 1.5
+desserte 270 55 3 2 resine 1 carbone 2.5 2.5
+canape 220 56 1 1 plastique 4.5 1.5
+canape 70 56 1 1 caoutchouc 3 4
+canape 180 59 3 1 carton 4.5 1.5
+table-basse 130 61 1 1 chene 0.5 3
+etagere 310 61 2 1 verre 1.5 2
+console 500 62 3 2 resine 1 chene 3.5 3.5
+lampe 430 63 1 2 caoutchouc 2 plastique 4 3
+fauteuil 450 63 1 1 acier 3 1
+etagere 460 63 1 1 verre 4.5 4
+table-basse 200 65 1 1 acier 1.5 4
+etagere 390 66 2 1 plastique 0.5 4
+etagere 490 68 1 1 acier 0.5 3.5
+desserte 330 73 2 2 resine 3 acier 1 0.5
+etagere 160 80 2 1 carbone 2 2
+etagere 60 81 2 1 resine 3 3
+desserte 10 83 1 2 plastique 3 carbone 0.5 1
+canape 170 84 3 1 caoutchouc 3.5 2.5
+table-basse 310 84 1 1 carton 1.5 0.5
+canape 160 85 2 3 resine 1 verre 4.5 caoutchouc 2.5 1
+fauteuil 230 85 3 1 resine 4 3.5
+fauteuil 280 92 1 1 caoutchouc 3.5 3
+fauteuil 110 94 1 1 carbone 2.5 2
+chaise 500 95 2 1 resine 2.5 1
+etagere 260 97 2 1 verre 4 2
+fauteuil 110 98 3 1 caoutchouc 2 2.5
+console 200 98 2 1 acier 0.5 4.5
+canape 160 102 2 3 carbone 2 caoutchouc 1 carbone 0.5 4
+canape 500 105 3 1 plastique 3.5 1.5
+console 110 109 1 2 caoutchouc 3 resine 4 0.5
+canape 380 114 3 2 resine 4.5 caoutchouc 2 2.5
+commode 240 114 3 1 carton 1 2
+desserte 200 119 1 1 carbone 3.5 3
+canape 10 120 1 3 chene 1 chene 1.5 carton 1 4.5
+fauteuil 240 124 2 1 carton 3.5 4
+console 150 128 2 1 caoutchouc 4 1.5
+commode 150 128 1 1 carton 0.5 3.5
+canape 330 130 3 1 chene 4.5 3.5
+chaise 470 130 1 1 plastique 3 2
+fauteuil 210 140 3 2 carbone 1 carton 2.5 4.5
+canape 480 142 3 1 caoutchouc 4 3.5
+fauteuil 410 144 3 1 verre 0.5 1
+desserte 370 148 2 3 acier 1 resine 0.5 carton 4.5 2
+console 110 149 1 3 plastique 0.5 plastique 4 acier 1.5 0.5
+console 410 151 2 1 resine 3.5 3.5
+commode 470 153 2 1 carbone 4.5 3.5
+lampe 410 154 1 1 plastique 1 4
+etagere 20 156 3 2 acier 1.5 plastique 1.5 3
+etagere 340 156 2 1 chene 3.5 1
+console 490 162 2 2 acier 2.5 plastique 3 1.5
+table-basse 310 162 2 1 resine 2 4
+fauteuil 20 162 2 2 verre 3 plastique 1 3.5
+console 120 163 2 2 carbone 4.5 carton 3.5 1.5
+commode 100 164 3 2 verre 4.5 caoutchouc 2.5 2.5
+console 40 165 3 1 acier 2.5 2.5
+fauteuil 400 169 3 1 plastique 2 4.5
+canape 430 170 3 2 chene 2.5 carton 3 4.5
+commode 80 170 3 1 chene 2.5 2.5
+lampe 490 170 3 3 carbone 1 carbone 1.5 chene 4 1
+table-basse 120 173 3 1 resine 0.5 1.5
+table-basse 340 174 1 1 carbone 1 3.5
+commode 380 174 2 1 caoutchouc 2.5 1.5
+commode 230 175 2 1 caoutchouc 2.5 3.5
+etagere 470 180 3 1 carbone 2 4.5
+chaise 460 182 1 3 carton 1.5 verre 0.5 carbone 2 1.5
+etagere 430 183 2 3 caoutchouc 4 acier 2.5 acier 0.5 3
+lampe 440 185 1 2 carbone 2 caoutchouc 3.5 3
+chaise 330 186 2 2 resine 4.5 carton 0.5 4
+commode 20 186 3 1 plastique 2 3.5
+desserte 390 187 1 2 carton 3 plastique 2 2.5
+commode 210 192 1 1 plastique 0.5 0.5
+console 230 197 3 1 acier 3 4.5
+fauteuil 140 200 2 1 chene 3 0.5
+table-basse 500 200 2 3 acier 0.5 chene 2 chene 1 0.5
+etagere 110 203 1 1 resine 1 1.5
+desserte 10 207 2 3 chene 4.5 carton 4 carton 2 4.5
+commode 430 208 3 3 caoutchouc 3.5 caoutchouc 3 caoutchouc 2 4
+console 110 209 2 2 acier 2.5 chene 1.5 3
+table-basse 60 210 1 2 plastique 1.5 plastique 2.5 3.5
+table-basse 60 210 2 1 carton 4.5 0.5
+desserte 310 215 2 3 plastique 3 chene 2.5 carton 4.5 1
+fauteuil 460 219 2 1 resine 4.5 4.5
+console 130 221 2 2 caoutchouc 2.5 chene 4.5 3.5
+console 70 224 3 1 carbone 0.5 2.5
+table-basse 340 225 1 1 resine 2 1.5
+chaise 380 226 3 1 plastique 3 1.5
+table-basse 220 227 2 3 carbone 2.5 resine 4 resine 2 0.5
+desserte 300 232 2 1 chene 4 3.5
+commode 460 236 3 1 verre 2.5 2
+chaise 290 236 2 3 resine 0.5 caoutchouc 3.5 acier 2 4
+table-basse 30 237 1 1 plastique 3 0.5
+canape 460 238 1 3 plastique 4 acier 3 carton 1 2.5
+table-basse 410 239 3 2 carbone 2.5 acier 3 2.5
+etagere 270 239 1 1 carbone 2 2.5
+console 80 240 2 1 verre 2.5 4.5
+table-basse 350 243 3 2 plastique 2 plastique 4.5 4
+commode 100 246 3 1 chene 1.5 1.5
+canape 180 246 2 2 chene 3.5 chene 0.5 2.5
+table-basse 340 247 1 2 acier 3.5 plastique 2.5 2.5
+commode 260 247 3 1 chene 3.5 4.5
+lampe 180 249 3 3 acier 0.5 resine 1 acier 3 1.5
+commode 170 251 2 3 chene 1 carton 2 carbone 2 2
+commode 10 254 3 3 carbone 2.5 acier 4 carbone 0.5 4
+chaise 280 255 1 3 carbone 0.5 caoutchouc 3 resine 3 1.5
+table-basse 170 256 3 2 plastique 3.5 verre 4 3.5
+desserte 350 257 2 1 chene 3 2.5
+canape 100 258 2 2 carton 4 acier 2.5 2
+console 280 258 3 3 verre 1 carton 2.5 plastique 4 1.5
+desserte 270 258 1 3 resine 3.5 acier 2 plastique 3 4
+console 80 260 1 1 plastique 3.5 3
+etagere 110 263 2 1 verre 3 2.5
+lampe 30 263 3 3 plastique 3.5 resine 3 verre 3.5 4
+lampe 270 265 3 2 verre 0.5 acier 0.5 2
+etagere 60 265 3 1 carbone 4 2
+fauteuil 430 268 3 3 carton 3 plastique 2 plastique 1 4
+commode 290 269 2 1 carton 3 3
+canape 330 270 2 3 plastique 1 carbone 2.5 acier 1 4.5
+console 470 270 2 2 verre 0.5 acier 3.5 1.5
+fauteuil 100 271 2 1 acier 2.5 1
+desserte 260 273 3 1 verre 4.5 1
+lampe 40 274 2 2 plastique 4.5 acier 4 2
+etagere 110 276 3 1 plastique 2.5 1
+chaise 250 276 2 1 carbone 4 2.5
+chaise 350 278 3 1 carbone 1 2.5
+chaise 240 281 1 1 resine 4.5 1
+table-basse 210 283 1 1 resine 1 3
+canape 280 284 2 1 carbone 2.5 1.5
+desserte 10 285 2 2 carbone 1 carbone 4.5 2.5
+chaise 380 286 2 1 acier 1 0.5
+canape 260 294 1 2 acier 2 carton 1.5 3.5
+commode 390 296 1 1 caoutchouc 2.5 4.5
+desserte 440 298 1 1 carton 4.5 2
+lampe 450 301 2 1 acier 3.5 0.5
+lampe 320 302 1 2 acier 3 chene 1.5 2.5
+commode 120 304 1 2 plastique 0.5 carbone 1 1.5
+table-basse 110 306 2 1 carbone 3.5 0.5
+chaise 350 307 1 3 caoutchouc 2.5 plastique 0.5 carbone 2 4.5
+table-basse 10 309 2 1 carbone 0.5 2.5
+table-basse 500 311 2 1 acier 2.5 0.5
+chaise 80 314 3 1 verre 1.5 0.5
+lampe 420 317 1 1 acier 1.5 3.5
+canape 80 320 3 2 chene 1 verre 1.5 2
+commode 340 320 1 1 chene 2 1.5
+commode 210 322 2 1 plastique 3.5 1.5
+chaise 270 331 2 1 plastique 0.5 0.5
+table-basse 250 332 3 2 carbone 3 acier 4 4.5
+canape 230 338 1 1 carton 1.5 1.5
+table-basse 300 338 2 1 caoutchouc 1 2
+fauteuil 140 338 1 1 caoutchouc 4.5 2.5
+fauteuil 220 340 3 1 carton 2.5 3
+canape 170 341 1 1 acier 3.5 0.5
+desserte 390 342 2 1 carton 4 3.5
+console 310 343 1 1 verre 3.5 2.5
+commode 40 343 2 2 acier 3.5 carton 2 1
+console 250 343 3 1 verre 2 4.5
+console 20 344 1 1 carton 4.5 0.5
+desserte 120 344 1 1 caoutchouc 3 4
+etagere 410 345 2 1 plastique 2 1
+commode 310 345 2 2 chene 4 acier 3 2.5
+console 130 351 1 2 resine 1 resine 1 1.5
+lampe 100 354 3 2 plastique 0.5 chene 0.5 3
+commode 240 359 2 3 carbone 0.5 carbone 1 resine 0.5 0.5
+desserte 170 361 2 1 plastique 3 1
+canape 230 362 2 2 resine 3.5 chene 2 1
+lampe 210 364 2 1 caoutchouc 1 4
+canape 240 366 3 1 resine 0.5 4.5
+etagere 310 366 1 1 carbone 3.5 1.5
+table-basse 400 366 1 2 caoutchouc 2 plastique 3.5 3.5
+etagere 410 369 2 1 carbone 2 1
+canape 100 369 1 1 caoutchouc 1 3.5
+canape 390 371 2 1 chene 2.5 3
+etagere 190 371 1 1 acier 2 3.5
+fauteuil 320 371 1 1 carton 0.5 2.5
+fauteuil 190 377 1 2 chene 4.5 acier 0.5 3.5
+canape 420 378 2 1 resine 0.5 3.5
+etagere 210 380 1 2 carbone 1 caoutchouc 1.5 4.5
+canape 400 384 1 3 caoutchouc 0.5 plastique 1 chene 4.5 2.5
+console 440 386 2 1 resine 2.5 0.5
+fauteuil 150 392 1 1 verre 0.5 3.5
+table-basse 450 395 2 2 carton 3.5 acier 1.5 3
+canape 410 396 2 2 resine 0.5 chene 2 4
+table-basse 350 399 2 1 acier 4 3
+table-basse 320 399 3 1 resine 0.5 4.5
+canape 110 400 1 2 caoutchouc 4.5 carton 1 2
+table-basse 130 402 3 1 verre 1 2.5
+fauteuil 100 402 1 1 carton 4 3.5
+table-basse 210 403 3 2 verre 2.5 plastique 4.5 1.5
+commode 120 406 1 1 plastique 4.5 4.5
+lampe 410 410 3 1 plastique 2 2
+chaise 100 412 2 1 carton 2.5 1.5
+etagere 390 413 1 1 carbone 3 4.5
+console 320 414 1 3 caoutchouc 1 carton 1.5 carbone 3.5 4.5
+etagere 240 414 2 1 plastique 0.5 4
+canape 20 416 1 1 acier 0.5 2
+etagere 440 417 2 2 carbone 4 plastique 3.5 3.5
+commode 290 420 2 1 carbone 2 4.5
+canape 320 431 1 2 carbone 1.5 plastique 3 3
+table-basse 280 437 1 3 plastique 1.5 carton 1 caoutchouc 1.5 4.5
+commode 60 438 2 1 chene 2.5 0.5
+lampe 60 439 2 1 carton 1 3
+chaise 280 440 3 1 plastique 3 4.5
+chaise 90 440 3 1 plastique 0.5 2
+commode 50 443 3 2 verre 2 resine 1.5 3.5
+fauteuil 50 444 3 1 carbone 2 2.5
+fauteuil 480 444 2 2 plastique 2 caoutchouc 4.5 4
+table-basse 150 446 2 1 chene 4 2
+console 60 449 1 1 acier 1.5 1.5
+fauteuil 450 451 3 1 verre 3.5 3.5
+fauteuil 150 452 2 2 carbone 3 plastique 0.5 1.5
+console 390 452 1 3 acier 2 chene 3.5 acier 0.5 3.5
+chaise 70 454 2 2 chene 4.5 caoutchouc 0.5 1
+console 180 456 1 1 chene 2.5 2
+console 300 459 1 3 carton 2 chene 2 plastique 1 2.5
+desserte 360 461 2 2 verre 1 caoutchouc 4 4.5
+console 430 462 3 1 carton 2 0.5
+canape 300 468 2 1 acier 0.5 2.5
+fauteuil 490 469 2 1 chene 3.5 3
+lampe 300 470 1 1 carbone 2.5 3.5
+canape 370 471 3 3 verre 4 carton 3.5 plastique 3 3.5
+console 200 472 3 1 resine 0.5 1
+desserte 430 473 3 1 chene 4 1.5
+fauteuil 350 474 3 1 acier 3 4
+canape 190 477 1 1 carton 1.5 3
+fauteuil 60 481 1 1 verre 4 0.5
+canape 10 481 3 1 caoutchouc 3 4
+lampe 160 487 2 1 carton 2.5 3.5
+desserte 320 490 1 2 chene 3 plastique 3 3.5
+canape 450 497 2 1 carton 4.5 3
+lampe 390 498 3 2 verre 1.5 resine 1 1.5
+canape 20 499 2 1 plastique 3 2.5
+canape 170 501 1 3 caoutchouc 3 verre 3.5 carton 2.5 3.5
+lampe 470 505 3 1 carton 1 2.5
+table-basse 360 505 2 2 verre 4 carbone 1.5 3.5
+commode 90 505 1 1 carton 3.5 1.5
+canape 210 517 3 1 chene 1.5 0.5
+commode 350 522 3 1 carbone 2 4.5
+lampe 220 522 3 1 verre 3 1.5
+desserte 440 528 2 1 resine 2.5 2.5
+chaise 200 529 2 1 verre 3 2
+console 110 530 2 1 verre 0.5 3.5
+fauteuil 280 531 1 1 resine 3 3.5
+etagere 80 534 3 3 caoutchouc 4.5 carbone 1 plastique 1.5 4
+table-basse 100 534 2 1 verre 1.5 4
+fauteuil 130 541 2 1 caoutchouc 3.5 1
+commode 390 551 3 2 acier 4 carbone 2.5 4
+desserte 370 551 1 1 caoutchouc 4.5 4
+commode 410 552 2 1 acier 1.5 4.5
+lampe 190 556 2 3 acier 4.5 caoutchouc 2 chene 4 3.5
+lampe 180 564 2 1 resine 0.5 2
+etagere 10 564 3 2 acier 3 carton 0.5 3
+desserte 200 565 3 1 caoutchouc 0.5 4
+canape 430 566 1 2 caoutchouc 4.5 carton 4 4.5
+chaise 140 566 1 1 carbone 3 2
+chaise 250 568 3 2 chene 2 carbone 4.5 4
+commode 500 568 3 2 acier 1.5 acier 1 1.5
+table-basse 70 570 2 1 plastique 1 4.5
+commode 160 571 2 2 verre 4.5 caoutchouc 4.5 2.5
+lampe 420 571 2 2 verre 3 resine 1.5 1
+commode 250 573 3 1 plastique 3 2
+canape 320 574 1 1 verre 4.5 1
+table-basse 340 575 3 2 carbone 4.5 verre 1 3.5
+canape 410 578 3 1 carton 3 1
+table-basse 60 578 1 3 carbone 3 chene 3.5 chene 4.5 2.5
+commode 420 579 1 1 carbone 3.5 2
+console 70 581 1 3 chene 3.5 verre 1 carton 0.5 4
+table-basse 200 582 1 2 plastique 2.5 carbone 2.5 2.5
+desserte 480 584 1 1 caoutchouc 3 3.5
+console 150 586 1 1 carton 2 2.5
+etagere 490 589 1 1 carton 2 4
+commode 190 594 3 2 resine 0.5 carbone 4 0.5
+commode 470 596 3 3 carton 4 verre 3 plastique 0.5 3.5
+desserte 70 600 3 1 carbone 3.5 4.5
+canape 380 601 3 1 chene 3.5 1
+fauteuil 150 602 2 1 resine 2.5 4
+console 300 604 2 3 plastique 2 plastique 3.5 caoutchouc 1.5 0.5
+console 280 606 3 1 carton 1.5 3
+commode 350 611 2 1 resine 4.5 3.5
+etagere 200 613 1 1 carton 3.5 2
+console 440 613 1 1 carbone 4.5 1.5
+table-basse 80 614 1 2 carton 4 carbone 1 2
+console 200 614 3 2 carbone 0.5 caoutchouc 3.5 3.5
+lampe 320 624 3 1 acier 2 0.5
+commode 370 625 1 1 caoutchouc 1 3.5
+table-basse 340 628 2 2 caoutchouc 3.5 plastique 4.5 4
+table-basse 420 631 3 1 chene 3.5 3.5
+table-basse 80 631 2 1 acier 0.5 3
+table-basse 380 634 3 3 chene 1.5 carbone 2.5 verre 2 1.5
+chaise 460 635 1 1 verre 4.5 3.5
+desserte 170 637 1 1 chene 3 4.5
+commode 420 638 2 1 resine 0.5 4.5
+chaise 500 641 3 1 acier 4 1
+canape 490 645 3 1 caoutchouc 4.5 4.5
+chaise 210 647 1 1 carbone 1 1
+commode 140 647 2 1 verre 3.5 3.5
+lampe 90 649 2 3 chene 4 plastique 4 carton 2 1
+chaise 180 653 1 1 carbone 1 2
+desserte 120 656 3 2 acier 4.5 plastique 4.5 1
+etagere 360 658 3 1 verre 1.5 4
+canape 160 659 1 1 verre 1.5 0.5
+chaise 140 663 1 1 plastique 3.5 0.5
+desserte 270 663 3 3 plastique 1.5 acier 2 caoutchouc 2.5 0.5
+etagere 300 669 2 3 carbone 2 plastique 2 resine 1 4.5
+fauteuil 260 669 1 2 acier 0.5 carbone 4 1
+desserte 270 675 1 1 caoutchouc 0.5 3
+etagere 240 676 1 2 plastique 1.5 verre 1 3.5
+desserte 140 676 1 1 resine 1.5 4
+table-basse 460 678 3 1 verre 3.5 3
+canape 270 683 1 2 resine 3.5 resine 4.5 3
+commode 60 683 1 1 acier 4 2.5
+canape 380 685 2 3 verre 1.5 chene 1 plastique 1 2
+console 120 685 1 1 caoutchouc 4 2
+canape 210 686 1 1 carton 3 2.5
+chaise 270 687 1 2 verre 2.5 caoutchouc 4 0.5
+desserte 330 688 3 2 chene 2 chene 3.5 2
+fauteuil 460 689 3 1 carton 3 0.5
+fauteuil 390 692 1 1 plastique 4.5 1.5
+chaise 70 695 1 3 plastique 3 caoutchouc 2.5 caoutchouc 0.5 2
+chaise 110 699 2 3 verre 3.5 acier 4 verre 4 1
+fauteuil 260 699 3 1 caoutchouc 1.5 2.5
+canape 220 701 3 1 verre 2.5 2.5
+console 250 705 1 2 verre 3 caoutchouc 2.5 4.5
+canape 410 707 1 1 resine 3 1
+lampe 130 710 1 1 caoutchouc 2.5 0.5
+commode 230 711 3 1 plastique 0.5 2
+chaise 440 714 2 2 caoutchouc 3 caoutchouc 3 3.5
+canape 40 716 1 1 acier 3 4.5
+canape 90 717 1 2 resine 0.5 acier 3 0.5
+fauteuil 500 718 3 1 verre 4.5 0.5
+commode 130 721 1 1 verre 2.5 2.5
+etagere 290 722 3 1 resine 3.5 3.5
+etagere 280 726 2 1 carton 3 2.5
+fauteuil 410 728 2 2 verre 3.5 resine 1 0.5
+console 480 730 1 1 resine 1 2.5
+console 140 732 2 1 verre 2 3.5
+lampe 300 732 2 3 plastique 4 verre 3.5 caoutchouc 3 1
+canape 100 743 3 3 plastique 1.5 carbone 3.5 verre 3 1.5
+etagere 200 745 1 1 carton 3.5 1
+table-basse 460 749 3 1 caoutchouc 3 3
+canape 500 750 3 1 acier 0.5 1
+canape 470 751 1 2 carton 1 resine 3 1
+table-basse 100 751 1 2 verre 4.5 carbone 4 3.5
+commode 430 753 3 3 carbone 2 verre 1.5 acier 2.5 1
+lampe 330 753 1 2 chene 3.5 verre 3 1.5
+fauteuil 70 754 1 3 caoutchouc 2.5 verre 2 verre 1 4
+fauteuil 140 756 1 1 caoutchouc 2 4
+table-basse 60 759 3 1 plastique 1.5 3.5
+fauteuil 10 760 1 1 resine 1.5 3
+fauteuil 180 763 2 1 resine 4.5 3
+lampe 280 764 1 1 plastique 4.5 2
+console 430 765 1 1 chene 4 3.5
+console 40 774 2 1 resine 1.5 4.5
+chaise 450 775 1 2 carbone 3.5 verre 0.5 4.5
+chaise 380 775 1 2 chene 1 caoutchouc 0.5 0.5
+chaise 280 775 2 2 chene 2 chene 1 1
+lampe 370 777 1 1 carton 2 2.5
+chaise 140 780 3 3 carbone 1 acier 1.5 caoutchouc 4 1.5
+table-basse 250 787 3 1 acier 3.5 4.5
+console 390 789 3 1 resine 3 0.5
+console 250 789 1 1 verre 2 0.5
+commode 20 791 1 1 acier 2.5 3.5
+console 60 792 1 2 carton 3 chene 4.5 4.5
+desserte 150 792 3 2 plastique 0.5 verre 4.5 4.5
+console 170 795 1 2 plastique 4 caoutchouc 1.5 0.5
+canape 480 797 1 1 verre 4.5 3
+commode 20 804 2 1 carton 2 3.5
+table-basse 450 806 3 1 carton 0.5 1
+commode 60 808 1 1 acier 3 1
+etagere 390 808 3 1 chene 2.5 3.5
+chaise 250 813 2 1 chene 4 0.5
+commode 500 814 3 2 resine 4 carton 1 4
+canape 220 815 3 1 acier 4.5 1.5
+console 260 816 2 1 carton 4.5 1.5
+table-basse 140 819 2 2 carton 3.5 resine 1 2
+fauteuil 400 823 2 2 carton 2 plastique 1.5 2.5
+table-basse 500 826 1 1 chene 1.5 4
+lampe 500 828 2 1 caoutchouc 3 4.5
+commode 240 831 3 1 carbone 1.5 3
+desserte 90 834 2 1 plastique 4 2
+desserte 110 834 2 2 chene 2 carton 3 3
+fauteuil 450 836 3 1 acier 1 3.5
+lampe 210 836 1 1 acier 1.5 3
+commode 180 837 2 3 plastique 4 carton 3.5 carbone 0.5 2.5
+chaise 180 842 2 2 chene 4.5 caoutchouc 3 0.5
+console 270 846 2 2 verre 4 chene 1.5 1.5
+commode 500 847 2 1 carton 4 3
+commode 180 852 2 1 carbone 1.5 2.5
+commode 420 852 3 1 verre 3 4.5
+table-basse 400 854 2 1 caoutchouc 2.5 3
+fauteuil 500 855 1 1 acier 1 2
+canape 130 855 1 3 carton 3 resine 0.5 carton 2.5 4.5
+table-basse 70 862 1 1 chene 3.5 3
+canape 40 864 1 1 plastique 0.5 0.5
+lampe 490 866 1 1 verre 3 4.5
+table-basse 400 871 1 1 carton 1 4
+lampe 440 871 2 3 verre 0.5 plastique 1.5 carbone 2.5 2.5
+fauteuil 500 875 2 1 acier 4 0.5
+chaise 100 877 1 1 plastique 2.5 2
+fauteuil 400 883 3 2 plastique 3 verre 3 1.5
+fauteuil 440 887 1 1 chene 3 3
+lampe 480 889 2 2 acier 4 chene 1.5 4.5
+chaise 10 890 3 1 acier 2.5 2.5
+fauteuil 330 898 3 1 caoutchouc 4 2
+desserte 250 901 3 1 chene 3 3
+fauteuil 200 909 1 3 carton 4.5 chene 2 acier 1 1.5
+lampe 460 911 3 1 plastique 4.5 1
+table-basse 390 911 3 1 chene 2.5 4
+fauteuil 480 912 3 1 carbone 2 4
+commode 260 915 3 1 chene 4 2
+lampe 50 917 2 2 caoutchouc 3 acier 2 2.5
+console 410 921 2 2 resine 3 carton 4.5 2
+fauteuil 120 923 2 1 chene 4 1
+table-basse 260 924 1 1 caoutchouc 1 2
+commode 340 927 2 3 resine 1.5 verre 2.5 carton 3.5 2
+chaise 440 927 1 1 caoutchouc 2.5 4.5
+console 350 929 1 3 resine 0.5 resine 0.5 plastique 4.5 2.5
+desserte 110 929 2 3 chene 1.5 carbone 4 plastique 4.5 3
+chaise 20 931 1 2 plastique 4.5 carbone 0.5 3.5
+commode 140 931 1 1 carbone 1.5 3
+table-basse 490 935 1 1 caoutchouc 4 2
+console 360 935 3 3 verre 3.5 chene 3 plastique 0.5 0.5
+desserte 370 940 1 3 verre 3 carton 3 caoutchouc 2 2.5
+console 40 943 2 1 carton 2 1
+console 250 945 2 1 carbone 2 3
+fauteuil 380 947 3 2 caoutchouc 1 caoutchouc 3.5 3
+desserte 480 947 2 1 plastique 4.5 0.5
+console 150 947 1 1 verre 1 2
+chaise 150 950 2 2 acier 3 resine 3 1.5
+canape 160 952 2 1 chene 3.5 2
+table-basse 100 953 2 1 verre 4 4
+lampe 80 953 1 2 carbone 3 caoutchouc 3 4.5
+fauteuil 430 956 2 2 resine 4.5 chene 2 3.5
+chaise 210 960 3 2 carbone 1.5 plastique 4.5 1.5
+console 180 962 3 1 acier 2 4
+chaise 260 967 1 2 acier 2.5 carbone 3.5 3
+canape 460 968 1 2 carbone 0.5 carton 4 4.5
+fauteuil 220 970 1 2 carbone 3.5 plastique 4 1
+canape 230 970 1 1 carton 4.5 3.5
+fauteuil 230 970 3 1 caoutchouc 4.5 2.5
+lampe 280 972 2 1 plastique 2 1.5
+commode 380 972 1 1 resine 2 4
+canape 330 974 1 1 verre 4 4.5
+desserte 250 975 2 1 resine 3.5 0.5
+desserte 420 976 3 1 carbone 4.5 1.5
+canape 400 979 1 1 verre 1 3
+desserte 340 981 1 1 carton 0.5 2
+console 310 985 2 1 caoutchouc 1.5 3
+chaise 380 985 2 1 caoutchouc 4.5 3.5
+etagere 390 986 3 3 acier 0.5 verre 4 acier 4 4.5
+console 430 986 3 2 carbone 3.5 plastique 4 1
+fauteuil 170 987 3 1 acier 3.5 1
+desserte 80 988 1 1 carbone 3 3.5
+fauteuil 230 989 1 1 plastique 3 1
+console 410 989 2 2 chene 2 plastique 4 1
+etagere 430 990 1 2 carbone 1.5 caoutchouc 2.5 3
+commode 30 994 2 1 chene 3.5 4.5
+table-basse 130 994 2 1 chene 1 0.5
+chaise 140 995 3 2 plastique 2.5 acier 3 4.5
+desserte 90 996 3 1 carton 2.5 1.5
+etagere 20 999 1 1 resine 4 3.5
+chaise 80 1001 1 1 plastique 1.5 0.5
+desserte 140 1002 1 1 chene 2.5 3.5
+fauteuil 370 1007 3 1 caoutchouc 4 4.5
+commode 350 1012 2 2 plastique 2 plastique 4.5 4
+console 240 1012 1 1 carton 1.5 2.5
+console 280 1012 3 2 resine 2 chene 2.5 4
+lampe 50 1013 2 1 chene 1.5 0.5
+canape 230 1013 1 1 resine 1 2
+commode 250 1016 2 1 carton 4.5 1.5
+etagere 50 1018 3 3 plastique 3 carbone 4.5 resine 1 1.5
+table-basse 350 1019 2 1 carbone 4 1.5
+lampe 420 1019 1 1 carbone 0.5 3
+console 160 1023 2 1 carbone 3.5 0.5
+chaise 380 1029 1 1 carton 1.5 0.5
+lampe 60 1030 3 1 plastique 3 1.5
+chaise 400 1032 2 2 chene 3.5 carton 3.5 4.5
+commode 30 1032 3 2 caoutchouc 1.5 verre 2 1
+desserte 330 1034 1 3 carbone 4 chene 1 verre 0.5 1.5
+canape 400 1035 1 2 chene 3.5 caoutchouc 3 0.5
+etagere 50 1035 2 1 resine 4.5 0.5
+console 500 1036 2 1 resine 3 1.5
+table-basse 100 1036 3 1 carbone 1 2
+etagere 250 1046 3 2 carbone 3.5 carton 3.5 2
+lampe 170 1046 2 3 caoutchouc 4 carbone 3 chene 2 4.5
+console 100 1049 2 2 resine 3.5 chene 3 1.5

@@ -1,3 +1,11 @@
+/*************************************************************
+
+ Auteur: ZHONG Zijie, HAN Tengfei
+ Date: 15/04/2021
+ But: TP5 contient des diverses fonctions pour traiter(ajouter, affichier, ecrire/lire les documents et les stocker dans une liste) les structures dans le fichier type.h
+
+*************************************************************/
+
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -108,6 +116,7 @@ void ecrireObjets(elementObjet* liste, string nomFichierGene)
   fichier.close();
 }
 
+//short function to print several first elements of a liste to help debug
 void afficherListe(elementObjet* eleFocus, int max){
   if(eleFocus == NULL){
     cout <<"EMPTY LISTE"<<endl;
@@ -135,6 +144,7 @@ void afficherListe(elementObjet* eleFocus, int max){
   }
 }
 
+
 //calculRetard_Naive
 /* 
 Calculation with a "fixed" list
@@ -151,21 +161,60 @@ Result calculRetard1(elementObjet* liste){
   elementObjet* eleFocus;
   eleFocus = liste;
   Result res;
+  fstream fichier;
+  fichier.open("log_penalty_100.txt", ios::out);
+  
+  fichier<<"This is the log file of the process of calculationg of penalty, related to the data in data1/objetsInput_100.txt"<<endl;
 
   while (eleFocus != NULL){
     jourAct += eleFocus->dureePro;
-    if(eleFocus->dureePro < jourAct){
-      //since I am not sure about the meaning of "nombre des jours de retard", I calculated both 2 possibilities:
+    fichier<<"---"<<endl;
+    fichier<<"Current day number:"<<endl;
+    fichier<<"    "<<jourAct<<endl;
+    if(eleFocus->dureePro > (eleFocus->date-jourAct)){
+      //since we are not sure about the meaning of "nombre des jours de retard", we calculated both 2 possibilities:
       //this is the number of days considering multiplicity of objects
-      jours_de_retard_mul += ((jourAct - eleFocus->dureePro) * (eleFocus->nbObjet));
+      jours_de_retard_mul += ((jourAct + eleFocus->dureePro - eleFocus->date) * (eleFocus->nbObjet));
       //this is the number of days WITHOUT considering multiplicity of objects
-      jours_de_retard += (jourAct - eleFocus->dureePro);
+      jours_de_retard += (jourAct + eleFocus->dureePro - eleFocus->date);
+      fichier<<"Object in retard: "<<endl;
+      //write that retared object
+      if(eleFocus == NULL){
+        fichier <<"EMPTY LISTE"<<endl;
+      }
+      else{
+        for (int i = 0; i < 1; i ++){
+          fichier << "    "<<"- "<< eleFocus->nomObjet << " "
+          << eleFocus->nbObjet << " "
+          << eleFocus->date << " "
+          << eleFocus->dureePro << " "
+          << eleFocus->nbMati << " ";
+          ensMatieres ensMat;
+          ensMat = eleFocus->ensMat;
+          for (int k = 0; k < eleFocus->nbMati; k++){
+            fichier << ensMat[k].nom << " " << ensMat[k].poids << " ";
+          }
+          fichier << eleFocus->volume<<endl;
+        }
+      }
+      //end writing the retarded object
+
+      fichier<<"Days of delay of this single object(multiplcity):"<< endl;
+      fichier<<"    "<<((jourAct + eleFocus->dureePro - eleFocus->date) * (eleFocus->nbObjet))<<endl;
+      fichier<<"Days of delay of this single object(without multiplicity):"<< endl;
+      fichier<<"    "<<jourAct + eleFocus->dureePro - eleFocus->date<<endl;
+      
+
+    }
+    else{
+      fichier<<"NO DELAY TODAY"<<endl;
     }
     eleFocus = eleFocus->suivant;
   }
   res.jour = jours_de_retard;
   res.jour_mul = jours_de_retard_mul;
   res.penal = 1* jours_de_retard_mul;
+  fichier.close();
   return res;
 }
 
@@ -233,15 +282,34 @@ retardObjet* findRetardObjets(elementObjet* liste){
     if(eleFocus->dureePro < jourAct){
       singleRetard = jourAct - eleFocus->dureePro;
       retObj->jour_de_retard = singleRetard;
-      retObj->ele = ajoutFin(eleFocus, retObj->ele);
+      retObj->ele = ajoutDebut(eleFocus, retObj->ele);
     }
     eleFocus = eleFocus->suivant;
   }
   return retObj;
 }
 
-/*
-elementObjet* findSolutions(elementObjet* liste,int totalRetardDays){
 
+vector<elementObjet*> findSolutions(elementObjet* liste,retardObjet* retObj){
+  // the latest object retarded is the first element of retObj
+  elementObjet* endMarker = NULL;
+  elementObjet* eleFocus = NULL;
+  retardObjet* retObjFocus = NULL;
+  int temSum = 0;
+  int totalDelayDays = 0;
+
+  retObjFocus = retObj;
+  while(retObjFocus != NULL){
+    totalDelayDays += retObjFocus->jour_de_retard;
+    retObjFocus = retObjFocus->suivant;
+  }
+  cout<<"Total delay days : "<<endl;
+  cout<<totalDelayDays<<endl;
+
+  eleFocus = liste;
+  while(eleFocus !=NULL && eleFocus != endMarker){
+    //not yet finished
+    eleFocus = eleFocus->suivant;
+  }
+  
 }
-*/

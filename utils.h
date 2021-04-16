@@ -1,3 +1,11 @@
+/*************************************************************
+
+ Auteur: ZHONG Zijie, HAN Tengfei
+ Date: 15/04/2021
+ But: TP5 contient des diverses fonctions pour traiter(ajouter, affichier, ecrire/lire les documents et les stocker dans une liste) les structures dans le fichier type.h
+
+*************************************************************/
+
 #ifndef UTILS_INCLUDED
 #define UTILS_INCLUDED
 
@@ -28,12 +36,12 @@ elementObjet* lireObjets(string nomFichier, int nomMax);
 void ecrireObjets(elementObjet* liste, string nomFichierGene);
 
 //Function: afficherListe
-//Display the first 10 elements in the liste to help debug
+//Display the first nb_max elements in the liste to help debug
 void afficherListe(elementObjet* eleFocus, int max);
 
 //Function: calculRetard
 //calculate the late days and the penality
-//Input: list sorted and current date
+//Input: list sorted
 //Return: struct Result
 Result calculRetard1(elementObjet* liste);
 

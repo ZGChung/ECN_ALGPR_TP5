@@ -1,3 +1,11 @@
+/*************************************************************
+
+ Auteur: ZHONG Zijie, HAN Tengfei
+ Date: 15/04/2021
+ But: TP5 contient des diverses fonctions pour tri
+
+*************************************************************/
+
 #ifndef TRI_INCLUDED
 #define TRI_INCLUDED
 

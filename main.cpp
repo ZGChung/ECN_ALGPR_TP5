@@ -260,8 +260,8 @@ int main() {
   cout << "----------"<< endl;
   cout << "9.Test results of triRapide()"<<endl;
   cout << "---"<<endl;
-  cout<<"Remarque : Je n'ai pas utilisé la méthode de swap que j'ai parlé pendant le cours de TP car j'ai réalisé c'est compliqué quand on travaille avec une liste chaînée simple. "<<endl;
-  cout << "---"<<endl;
+  //cout<<"Remarque : Je n'ai pas utilisé la méthode de swap que j'ai parlé pendant le cours de TP car j'ai réalisé c'est compliqué quand on travaille avec une liste chaînée simple. "<<endl;
+  //cout << "---"<<endl;
   liste = lireObjets("data1/objetsInput_100.txt", 100);
 
   cout << "The first 10 elements of the unsorted list" <<endl;
@@ -294,7 +294,7 @@ int main() {
 
   cout << "----------"<< endl;
   cout << "10.Test results of calculRetard1()"<<endl;
-  liste = lireObjets("data1/objetsInput_100.txt", 100);
+  liste = lireObjets("testResult_triRapide.txt", 100);
   Result res;
   res = calculRetard1(liste);
 
@@ -311,9 +311,109 @@ int main() {
   cout<<"    "<<res.jour_mul<< " [jour(s)]" <<endl;
   cout<<"2.     Total penalty"<<endl;
   cout<<"    "<<res.penal<<" [unit d'argent]" <<endl;
-  cout<<endl<<"We got the results, however, we cannot assure that it is correct."<<endl;
-
+  cout<<endl<<"More details of the log is stroed in the file log_penalty_100.txt"<<endl;
+  cout<<endl<<"Function works."<<endl;
   cout << "----------"<< endl;
 
+  cout << "----------"<< endl;
+  cout << "11.Partie temps d'execution pour les deux facons de tri"<< endl;
+  cout << "----------"<< endl;
+
+  cout << "----------"<< endl;
+  cout << "a.Test de temps d'execution pour la fonction triInsertionRecursif"<< endl;
+
+  //preparation to get the nomFichier
+  nomFichier="";
+  numListe1={100,500,1000,5000,10000};//defined defore
+  typedef vector<string> nomDossier;
+  nomDossier nomDossier1;
+  nomDossier1.resize(4);
+  nomDossier1={"data1/","data2/","data3/","data4/"};
+
+  for(int i=0;i<4;i++){
+    for(int j=0;j<5;j++){
+      //modify the nomFichier for each interation of test
+      nomFichier = nomDossier1[i];
+      nomFichier += "objetsInput_";
+      nomFichier += to_string(numListe1[j]);
+      nomFichier += ".txt";
+      //write the nomFichierGene for each interation of test
+      nomFichierGene = "testTemps_triInsertionRecursif/";
+      nomFichierGene += nomDossier1[i];
+      nomFichierGene += "objetsInput_";
+      nomFichierGene += to_string(numListe1[j]);
+      nomFichierGene += ".txt";
+
+      //call the functions triInsertionRecursif()
+      elementObjet* liste;
+      elementObjet* listeTIR;
+      listeTIR = NULL;
+      eleAdd = NULL;//defined before
+      liste = lireObjets(nomFichier, numListe1[j]);
+
+      //to get the time of run
+      clock_t start,end;
+      start = clock();//start time
+      listeTIR = triInsertionRecursif(liste, listeTIR, eleAdd);
+      end = clock();//end time
+
+      ecrireObjets(listeTIR,nomFichierGene);
+      cout << nomDossier1[i] << " " << numListe1[j] << " " << (double)(end-start)/CLOCKS_PER_SEC
+      <<" ms" <<endl;
+      
+    }
+    
+  }
+  cout << "----------"<< endl;
+
+  cout << "----------"<< endl;
+  cout << "b.Test de temps d'execution pour la fonction triRapide"<< endl;
+
+  //preparation to get the nomFichier
+  nomFichier="";
+
+  for(int i=0;i<4;i++){
+    for(int j=0;j<5;j++){
+      //modify the nomFichier for each interation of test
+      nomFichier = nomDossier1[i];
+      nomFichier += "objetsInput_";
+      nomFichier += to_string(numListe1[j]);
+      nomFichier += ".txt";
+      //write the nomFichierGene for each interation of test
+      nomFichierGene = "testTemps_triRapide/";
+      nomFichierGene += nomDossier1[i];
+      nomFichierGene += "objetsInput_";
+      nomFichierGene += to_string(numListe1[j]);
+      nomFichierGene += ".txt";
+
+      //call the functions triRapide()
+      elementObjet* liste;
+      elementObjet* listeTIR;
+      listeTIR = NULL;
+      liste = lireObjets(nomFichier, numListe1[j]);
+
+      //to get the time of run
+      clock_t start,end;
+      start = clock();//start time
+      listeTIR = triRapide(liste);
+      end = clock();//end time
+
+      ecrireObjets(listeTIR,nomFichierGene);
+      cout << nomDossier1[i] << " " << numListe1[j] << " " << (double)(end-start)/CLOCKS_PER_SEC
+      <<" ms" <<endl;
+      
+    }
+    
+  }
+  cout << "----------"<< endl;
+  /*
+  //to get the time of run
+  clock_t start,end;
+  start = clock();
+  //function test here
+  end = clock();
+  cout << "Time of run of lireObjets()"
+  <<(double)(end-start)/CLOCKS_PER_SEC<<endl;
+  */
 
 }
